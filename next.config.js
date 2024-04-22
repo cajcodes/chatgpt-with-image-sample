@@ -8,7 +8,6 @@ const nextConfig = {
     return config
   },
   env: {
-    siteTitle: 'Chat with Image + DALL·E',
     maxFileUploadCount: 10,
   },
   trailingSlash: true,

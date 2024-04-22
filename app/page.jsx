@@ -1,4 +1,5 @@
 import Sandbox from "./sandbox"
+import Image from 'next/image';
 
 export const metadata = {
     title: process.env.siteTitle,
@@ -11,5 +12,10 @@ export const metadata = {
 }
 
 export default function Page() {
-    return <Sandbox />
+    return (
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Image src="/caj-green.svg" alt="Logo" width={150} height={100} />
+            <Sandbox />
+        </div>
+    )
 }
